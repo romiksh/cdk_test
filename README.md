@@ -134,7 +134,7 @@ route53:
 
 Deploy bootstrap to AWS
 ```
-./deploy.sh bootstap <account> <region>
+./deploy.sh bootstrap <account> <region>
 ```
 Deploy ECS
 ```
