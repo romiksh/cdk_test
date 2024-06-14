@@ -17,7 +17,7 @@ Project has environment depended deployment. Environment variable files stores i
 
 Dev is default environment for build.
 
-For build use [./develop.sh](../develop.sh) script with arguments:
+For build use [./deploy.sh](../deploy.sh) script with arguments:
 
             - command [bootstrap|deploy]
 
