@@ -1,8 +1,10 @@
 
 # Welcome to Test CDK Python project!
 
-## Task
-### Requirements:
+
+### ------------------------------------------------------------------------
+
+## Task definition:
 #### NGINX Configuration:
 Configure NGINX to proxy requests based on the URI path.
 ```
