@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -x
 if [[ $# -ge 3 ]]; then
     export CDK_DEPLOY_ACCOUNT=$2
     export CDK_DEPLOY_REGION=$3
-    shift; shift
-    cdk $1 "$@"
+    cdk $1 "${@:4}"
     exit $?
 else
     echo 1>&2 "Provide deploy or bootstrap as first argument"
