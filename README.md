@@ -138,4 +138,4 @@ Deploy ECS
 `dev` - environment variables file in `./envs/dev.yaml`
 
 # Quick notes for reference
-[Notes](doc/QuickNotes.html?raw=1)
+[Notes](doc/QuickNotes.md)
