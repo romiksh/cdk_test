@@ -136,3 +136,6 @@ Deploy ECS
 ./deploy.sh deploy <account> <region> -c env_name=dev
 ```
 `dev` - environment variables file in `./envs/dev.yaml`
+
+# Quick notes for reference
+[here](doc/QuickNotes.html)
