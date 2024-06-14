@@ -17,12 +17,12 @@ class EcsStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
 
         # Get env variables file
-        env_file = self.node.try_get_context('envFile')
-        if env_file is None:
-            print("No env file defined. Using 'dev.yaml' by default")
-            env_file = 'dev.yaml'
+        env_name = self.node.try_get_context('env_name')
+        if env_name is None:
+            print("No env defined. Using 'dev' by default")
+            env_name = 'dev'
 
-        with (open(f"./envs/{env_file}") as stream):
+        with (open(f"./envs/{env_name}.yaml") as stream):
             try:
                 env_data = yaml.safe_load(stream)
             except yaml.YAMLError as exc:

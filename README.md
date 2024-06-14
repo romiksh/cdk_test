@@ -76,12 +76,6 @@ step to activate your virtualenv.
 $ source .venv/bin/activate
 ```
 
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
-```
-
 Once the virtualenv is activated, you can install the required dependencies.
 
 ```
@@ -131,6 +125,7 @@ route53:
 ```
 
 # Deploy to AWS:
+Set `chmod +x deploy.sh`
 
 Deploy bootstrap to AWS
 ```
@@ -138,6 +133,6 @@ Deploy bootstrap to AWS
 ```
 Deploy ECS
 ```
-./deploy.sh deploy <account> <region> -c envFile=dev.yaml
+./deploy.sh deploy <account> <region> -c env_name=dev
 ```
-`dev.yaml` - environment variables file in `./envs/`
+`dev` - environment variables file in `./envs/dev.yaml`
