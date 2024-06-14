@@ -2,7 +2,7 @@
 # Welcome to Test CDK Python project!
 
 
-### ------------------------------------------------------------------------
+---
 
 ## Task definition:
 #### NGINX Configuration:
@@ -51,7 +51,7 @@ Documentation and ease of deployment.
 
 Submit your solution as a public Git repository.
 
-### ------------------------------------------------------------------------
+---
 ## Prepare the project
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.

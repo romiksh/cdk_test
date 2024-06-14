@@ -25,4 +25,4 @@ For build use [./deploy.sh](../deploy.sh) script with arguments:
 
             - AWS Region
 
-            - any other args for cdk bui
+            - any other args for cdk build
