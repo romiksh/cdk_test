@@ -33,7 +33,7 @@ class EcsStack(Stack):
         #Build Docker Image
         image_asset = ecr_assets.DockerImageAsset(self,
                                                   "NGINX-Proxy-App",
-                                                  directory="../nginx-app")
+                                                  directory="./nginx-app")
 
         image = ecs.ContainerImage.from_docker_image_asset(image_asset)
 
