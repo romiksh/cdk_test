@@ -106,6 +106,30 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
+# Prepare env file:
+Create envs dir:
+
+`mkdir envs`
+
+`cd envs`
+
+Put file with environment variables:
+
+For example:
+
+```yaml
+ecs:
+  memory: 512
+  cpu: 256
+service:
+  hostname: 'dev.example.com'
+certificate:
+  arn: 'arn:aws:<certificate arn>'
+route53:
+  hosted_zone_id: '<route 53 hosted zone ID>'
+  zone_name: 'example.com'
+```
+
 # Deploy to AWS:
 
 Deploy bootstrap to AWS
